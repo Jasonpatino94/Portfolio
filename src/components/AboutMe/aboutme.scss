@@ -1,3 +1,77 @@
 .aboutme {
-	background-color: orange;
+	// background-color: orange;
+	display: flex;
+	border-bottom: 2px solid;
+
+	.picture {
+		flex: 0.5;
+		display: block;
+		overflow: hidden;
+		align-items: left;
+		.me {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			overflow: y hidden;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+
+			img {
+				height: 99%;
+			}
+		}
+	}
+
+	.content {
+		flex: 0.5;
+
+		.text {
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			min-height: 80vh;
+
+			h1 {
+				font-size: 50px;
+			}
+
+			.titlespin {
+				color: red;
+				font-size: 30px;
+			}
+			.titlespin:after {
+				content: "";
+				animation: spin 5s linear infinite;
+			}
+			@keyframes spin {
+				0% {
+					content: "Frontend";
+				}
+				50% {
+					content: "Backend";
+				}
+				100% {
+					content: "Fullstack";
+				}
+			}
+
+			.title2 {
+				font-size: 30px;
+				color: red;
+			}
+		}
+
+		.nexticon {
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			font-size: 50px;
+
+			h4 {
+				font-size: 35px;
+			}
+		}
+	}
 }
