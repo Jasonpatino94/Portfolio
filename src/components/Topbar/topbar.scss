@@ -5,8 +5,9 @@
 	height: 65px;
 	width: 100%;
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
 	color: black;
+	transition: all 2s ease;
 
 	.wrapper {
 		padding: 10px 35px;
@@ -16,7 +17,11 @@
 		.mainlogo {
 			font-size: 30px;
 			align-items: center;
-			color: white;
+			a {
+				color: black;
+				text-decoration: none;
+				font-weight: 500;
+			}
 		}
 
 		.middle {
@@ -34,16 +39,48 @@
 				width: 25px;
 				height: 40px;
 				cursor: pointer;
+				border: none;
+				background-color: white;
+				border-radius: 50%;
+				align-items: center;
+
+				&:hover {
+					opacity: 1;
+					background-color: lightgrey;
+				}
 
 				.dot {
 					height: 10px;
 					width: 10px;
-					background-color: #bbb;
+					background-color: black;
 					border-radius: 50%;
 					display: flex;
-					align-items: center;
 					cursor: pointer;
 					justify-content: space-between;
+					transition: all 3s ease;
+				}
+			}
+		}
+	}
+
+	&.active {
+		background-color: black;
+		color: white;
+
+		.mainlogo {
+			a {
+				color: white;
+			}
+		}
+
+		.right {
+			.menu {
+				width: 25px;
+				height: 40px;
+				background-color: white;
+
+				.dot {
+					opacity: 0;
 				}
 			}
 		}

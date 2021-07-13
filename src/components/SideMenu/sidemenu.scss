@@ -1,0 +1,30 @@
+.sidemenu {
+	width: 300px;
+	height: 60vh;
+	background-color: black;
+	display: flex;
+	position: fixed;
+	z-index: 2;
+	right: 0;
+	flex-direction: column;
+	justify-content: center;
+	right: -300px;
+	transition: all 1s ease;
+	&.active {
+		right: 0;
+	}
+
+	ul {
+		margin-left: 40px;
+		padding-top: 20px;
+
+		li {
+			margin-top: 20px;
+			a {
+				color: white;
+				text-decoration: none;
+				font-size: 30px;
+			}
+		}
+	}
+}

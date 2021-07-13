@@ -2,9 +2,9 @@ import React from "react";
 import "./topbar.scss";
 import {AiFillMail, AiFillPhone} from "react-icons/ai";
 
-const Topbar = () => {
+const Topbar = ({openMenu, setOpenMenu}) => {
 	return (
-		<div className="topbar">
+		<div className={"topbar " + (openMenu && "active")}>
 			<div className="wrapper">
 				<div className="left">
 					<div className="mainlogo">
@@ -22,11 +22,11 @@ const Topbar = () => {
 					</div>
 				</div>
 				<div className="right">
-					<div className="menu">
+					<button className="menu" onClick={() => setOpenMenu(!openMenu)}>
 						<span className="dot"></span>
 						<span className="dot"></span>
 						<span className="dot"></span>
-					</div>
+					</button>
 				</div>
 			</div>
 		</div>
