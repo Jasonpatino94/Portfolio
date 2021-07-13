@@ -1,0 +1,51 @@
+@import "../../global.scss";
+
+.topbar {
+	background-color: $mainColor;
+	height: 65px;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	color: black;
+
+	.wrapper {
+		padding: 10px 35px;
+		display: flex;
+		justify-content: space-between;
+
+		.mainlogo {
+			font-size: 30px;
+			align-items: center;
+			color: white;
+		}
+
+		.middle {
+			display: flex;
+			align-items: center;
+
+			.icon {
+				margin-right: 40px;
+				font-size: 20px;
+			}
+		}
+
+		.right {
+			.menu {
+				width: 25px;
+				height: 40px;
+				cursor: pointer;
+
+				.dot {
+					height: 10px;
+					width: 10px;
+					background-color: #bbb;
+					border-radius: 50%;
+					display: flex;
+					align-items: center;
+					cursor: pointer;
+					justify-content: space-between;
+				}
+			}
+		}
+	}
+}
