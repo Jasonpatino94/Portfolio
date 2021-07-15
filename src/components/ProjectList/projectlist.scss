@@ -1,0 +1,43 @@
+.projectlist {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	// align-items: center;
+	min-height: 80vh;
+	justify-content: space-between;
+	font-size: 35px;
+	background-color: black;
+	li {
+		justify-content: left;
+		// flex-direction: column;
+		align-items: left;
+		color: white;
+		overflow: hidden;
+
+		&:hover {
+			font-style: italic;
+			cursor: pointer;
+		}
+
+		a {
+			color: white;
+			padding-right: 10px;
+			margin-right: 10px;
+
+			&:hover {
+				color: red;
+			}
+		}
+		&.active {
+			font-style: italic;
+		}
+
+		&.nonactive {
+			.link {
+				pointer-events: none;
+				cursor: default;
+			}
+		}
+	}
+}

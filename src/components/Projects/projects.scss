@@ -5,47 +5,26 @@
 
 	.left {
 		flex: 0.3;
-
-		.projectlist {
-			height: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			// align-items: center;
-			min-height: 80vh;
-			justify-content: space-between;
-			font-size: 35px;
-			background-color: black;
-			li {
-				justify-content: left;
-				// flex-direction: column;
-				align-items: left;
-				color: white;
-				overflow: hidden;
-
-				&:hover {
-					font-style: italic;
-					cursor: pointer;
-				}
-
-				a {
-					color: white;
-					padding-right: 10px;
-					margin-right: 10px;
-
-					&:hover {
-						color: red;
-					}
-				}
-				&.active {
-					font-style: italic;
-				}
-			}
-		}
 	}
 
 	.right {
 		flex: 0.7;
 		color: white;
+
+		.picture {
+			height: 100%;
+			width: 100%;
+			flex-direction: column;
+			justify-content: center;
+
+			// h1 {
+			// 	color: black;
+			// 	text-align: center;
+			// }
+
+			img {
+				border-bottom: 20px;
+			}
+		}
 	}
 }
