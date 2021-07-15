@@ -1,0 +1,32 @@
+.sidemenu {
+  width: 300px;
+  height: 60vh;
+  background-color: black;
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  flex-direction: column;
+  justify-content: center;
+  right: -300px;
+  transition: all 1s ease;
+}
+.sidemenu.active {
+  right: 0;
+}
+.sidemenu ul {
+  margin-left: 40px;
+  padding-top: 20px;
+}
+.sidemenu ul li {
+  margin-top: 20px;
+}
+.sidemenu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+.sidemenu ul li:hover {
+  font-style: italic;
+  font-weight: 700;
+  text-decoration: underline;
+}/*# sourceMappingURL=sidemenu.css.map */

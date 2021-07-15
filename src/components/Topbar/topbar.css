@@ -1,0 +1,69 @@
+.topbar {
+  background-color: white;
+  height: 65px;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  color: black;
+  transition: all 2s ease;
+}
+.topbar .wrapper {
+  padding: 10px 35px;
+  display: flex;
+  justify-content: space-between;
+}
+.topbar .wrapper .mainlogo {
+  font-size: 30px;
+  align-items: center;
+}
+.topbar .wrapper .mainlogo a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+.topbar .wrapper .middle {
+  display: flex;
+  align-items: center;
+}
+.topbar .wrapper .middle .icon {
+  margin-right: 40px;
+  font-size: 20px;
+}
+.topbar .wrapper .right .menu {
+  width: 25px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  border-radius: 50%;
+  align-items: center;
+}
+.topbar .wrapper .right .menu:hover {
+  opacity: 1;
+  background-color: lightgrey;
+}
+.topbar .wrapper .right .menu .dot {
+  height: 10px;
+  width: 10px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  transition: all 3s ease;
+}
+.topbar.active {
+  background-color: black;
+  color: white;
+}
+.topbar.active .mainlogo a {
+  color: white;
+}
+.topbar.active .right .menu {
+  width: 25px;
+  height: 40px;
+  background-color: white;
+}
+.topbar.active .right .menu .dot {
+  opacity: 0;
+}/*# sourceMappingURL=topbar.css.map */

@@ -1,0 +1,22 @@
+.app {
+  height: 100vh;
+}
+.app .components {
+  width: 100%;
+  height: calc(100vh - 65px);
+  background-color: white;
+  position: relative;
+  top: 65px;
+  -ms-scroll-snap-type: y;
+      scroll-snap-type: y;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+.app .components::-webkit-scrollbar {
+  display: none;
+}
+.app .components > * {
+  width: 100%;
+  height: calc(100vh - 65px);
+  scroll-snap-align: start;
+}/*# sourceMappingURL=app.css.map */
