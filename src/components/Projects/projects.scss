@@ -5,6 +5,26 @@
 
 	.left {
 		flex: 0.3;
+
+		a {
+			color: white;
+			padding-right: 10px;
+			margin-right: 10px;
+
+			&:hover {
+				color: red;
+			}
+		}
+		&.active {
+			font-style: italic;
+		}
+
+		&.nonactive {
+			.link {
+				pointer-events: none;
+				cursor: default;
+			}
+		}
 	}
 
 	.right {
@@ -17,13 +37,23 @@
 			flex-direction: column;
 			justify-content: center;
 
-			// h1 {
-			// 	color: black;
-			// 	text-align: center;
-			// }
+			h1 {
+				color: black;
+				text-align: center;
+			}
 
 			img {
-				border-bottom: 20px;
+				// display: block;
+				// width: 70%;
+				// margin: 0 auto;
+				// justify-content: center;
+
+				display: flex;
+				width: 70%;
+				align-items: center;
+				justify-content: center;
+				margin: 0 auto;
+				margin-top: 10%;
 			}
 		}
 	}

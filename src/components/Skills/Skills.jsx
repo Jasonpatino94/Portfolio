@@ -14,7 +14,16 @@ const Skills = () => {
 		"CSS",
 		"SCSS",
 	];
-	return <div className="skills" id="skills"></div>;
+	return (
+		<div className="skills" id="skills">
+			<div className="left">
+				<h1>Frontend</h1>
+			</div>
+			<div className="right">
+				<h1>Backend</h1>
+			</div>
+		</div>
+	);
 };
 
 export default Skills;

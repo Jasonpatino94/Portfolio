@@ -20,24 +20,24 @@
 			cursor: pointer;
 		}
 
-		a {
-			color: white;
-			padding-right: 10px;
-			margin-right: 10px;
+		// a {
+		// 	color: white;
+		// 	padding-right: 10px;
+		// 	margin-right: 10px;
 
-			&:hover {
-				color: red;
-			}
-		}
-		&.active {
-			font-style: italic;
-		}
+		// 	&:hover {
+		// 		color: red;
+		// 	}
+		// }
+		// &.active {
+		// 	font-style: italic;
+		// }
 
-		&.nonactive {
-			.link {
-				pointer-events: none;
-				cursor: default;
-			}
-		}
+		// &.nonactive {
+		// 	.link {
+		// 		pointer-events: none;
+		// 		cursor: default;
+		// 	}
+		// }
 	}
 }
