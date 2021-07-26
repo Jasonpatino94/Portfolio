@@ -1,0 +1,20 @@
+.projectlist {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+  justify-content: space-between;
+  font-size: 35px;
+  background-color: black;
+}
+.projectlist li {
+  justify-content: left;
+  align-items: left;
+  color: white;
+  overflow: hidden;
+}
+.projectlist li:hover {
+  font-style: italic;
+  cursor: pointer;
+}/*# sourceMappingURL=projectlist.css.map */

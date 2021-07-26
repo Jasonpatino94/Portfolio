@@ -26,7 +26,6 @@ const Projectlist = ({list, setChosen, chosen}) => {
 					>
 						<FaVimeoSquare />
 					</a>
-					{console.log()}
 				</li>
 			))}
 		</ul>

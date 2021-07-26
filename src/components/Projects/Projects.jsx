@@ -2,6 +2,7 @@ import React from "react";
 import "./projects.scss";
 import Projectlist from "../ProjectList/Projectlist";
 import {useEffect, useState} from "react";
+import {AiFillCaretDown} from "react-icons/ai";
 
 const Projects = () => {
 	const sidebarlist = [
@@ -71,10 +72,14 @@ const Projects = () => {
 				/>
 			</div>
 			<div className="right">
+				{/* <h1>Projects</h1> */}
 				<div className="picture">
 					<img src={img} alt="" />
 				</div>
-				{console.log({chosen})}
+				<div className="skill">
+					<h4>Skills</h4>
+					<AiFillCaretDown />
+				</div>
 			</div>
 		</div>
 	);

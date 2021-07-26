@@ -1,3 +1,38 @@
 .contact {
-	background-color: red;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	h1 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: underline;
+		margin-bottom: 10px;
+		color: white;
+	}
+
+	.form {
+		display: flex;
+		flex-direction: column;
+		flex-direction: space-between;
+
+		label {
+			color: white;
+			display: flex;
+			justify-content: center;
+		}
+
+		.sendbutton {
+			border-radius: 10px;
+			width: 50%;
+			margin-left: 55px;
+		}
+	}
+
+	p {
+		color: white;
+	}
 }
