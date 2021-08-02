@@ -39,9 +39,13 @@
 				font-size: 50px;
 			}
 
+			h3 {
+				font-size: 30px;
+			}
+
 			.titlespin {
 				color: red;
-				font-size: 30px;
+				font-size: 70px;
 			}
 			.titlespin:after {
 				content: "";
@@ -60,8 +64,13 @@
 			}
 
 			.title2 {
-				font-size: 30px;
+				font-size: 50px;
 				color: red;
+			}
+
+			.summary {
+				margin-top: 50px;
+				width: 80%;
 			}
 		}
 

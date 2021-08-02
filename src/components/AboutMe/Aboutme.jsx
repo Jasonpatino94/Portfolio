@@ -30,11 +30,19 @@ const Aboutme = () => {
 			</div>
 			<div className="content">
 				<div className="text">
-					<h3>Hello My name is</h3>
-					<h1>Jason Patino</h1>
+					{/* <h3>Hello My name is</h3>
+					<h1>Jason Patino</h1> */}
 					<h3>
 						<span className="titlespin"></span> <br />
 						<span className="title2" ref={title2Ref}></span>
+					</h3>
+
+					<h3 className="summary">
+						Hello my name is <span className="name">Jason Patino</span> and I am
+						a recent graduate from Flatiron School. In my freetime I love to
+						watch videos and read more about coding, and if I'm not doing that
+						then I am most likely at the firehouse volunteering for the
+						comumunity as a firefighter.{" "}
 					</h3>
 				</div>
 

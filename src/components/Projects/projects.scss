@@ -1,10 +1,10 @@
 .projects {
 	background-color: white;
 	display: flex;
-	border-bottom: 2px solid;
+	border-bottom: 1px solid;
 
 	.left {
-		flex: 0.3;
+		flex: 0.2;
 
 		a {
 			color: white;
@@ -28,20 +28,23 @@
 	}
 
 	.right {
-		flex: 0.7;
+		flex: 0.8;
 		color: rgb(14, 13, 13);
-		overflow: hidden;
+		overflow: y hidden;
+		align-items: center;
+		justify-content: center;
 
 		.picture {
 			height: 88%;
 			width: 100%;
 			flex-direction: column;
 			justify-content: center;
+			overflow: y hidden;
 
-			h1 {
-				color: black;
-				text-align: center;
-			}
+			// h1 {
+			// 	color: black;
+			// 	text-align: center;
+			// }
 
 			img {
 				// display: block;
@@ -50,11 +53,11 @@
 				// justify-content: center;
 
 				display: flex;
-				width: 60%;
-				align-items: center;
-				justify-content: center;
+				width: 62%;
+				// align-items: center;
+				// justify-content: center;
 				margin: 0 auto;
-				overflow: y hidden;
+				// overflow-y: hidden;
 				// margin-top: %;
 			}
 		}

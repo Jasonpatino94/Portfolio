@@ -6,7 +6,7 @@
 	position: fixed;
 	z-index: 2;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	right: -300px;
 	transition: all 1s ease;
 	&.active {

@@ -25,7 +25,7 @@ export const frontend = [
 		img: "https://www.pikpng.com/pngl/m/100-1006307_bootstrap-social-media-icons-logo-css-clipart.png",
 	},
 	{
-		id: "scss",
+		id: "sass",
 		name: "SCSS",
 		img: "https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png",
 	},

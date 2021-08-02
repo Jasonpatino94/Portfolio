@@ -13,7 +13,7 @@ const Skills = () => {
 					{frontend.map((skill) => (
 						<div className="language" key={skill.id}>
 							<h2>{skill.name}</h2>
-							<img src={skill.img} alt="" className={skill.id} />
+							<img src={skill.img} alt="" />
 						</div>
 					))}
 				</div>
@@ -22,7 +22,7 @@ const Skills = () => {
 				<h1>Backend</h1>
 				<div className="languages">
 					{backend.map((skill) => (
-						<div key={skill.id}>
+						<div className="language" key={skill.id}>
 							<h2>{skill.name}</h2>
 							<img src={skill.img} alt="" className={skill.id} />
 						</div>

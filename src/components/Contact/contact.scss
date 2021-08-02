@@ -4,6 +4,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	font-size: 25px;
 
 	h1 {
 		display: flex;
@@ -18,6 +19,8 @@
 		display: flex;
 		flex-direction: column;
 		flex-direction: space-between;
+		width: 20%;
+		// height: 50%;
 
 		label {
 			color: white;
@@ -28,7 +31,7 @@
 		.sendbutton {
 			border-radius: 10px;
 			width: 50%;
-			margin-left: 55px;
+			margin-left: 95px;
 		}
 	}
 
