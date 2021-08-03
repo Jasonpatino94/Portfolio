@@ -38,8 +38,8 @@ const Aboutme = () => {
 					</h3>
 
 					<h3 className="summary">
-						Hello my name is <span className="name">Jason Patino</span> and I am
-						a recent graduate from Flatiron School. In my freetime I love to
+						Hello, my name is <span className="name">Jason Patino</span> and I
+						am a recent graduate from Flatiron School. In my free time I love to
 						watch videos and read more about coding, and if I'm not doing that
 						then I am most likely at the firehouse volunteering for the
 						comumunity as a firefighter.{" "}

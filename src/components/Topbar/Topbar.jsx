@@ -13,12 +13,12 @@ const Topbar = ({openMenu, setOpenMenu}) => {
 				</div>
 				<div className="middle">
 					<div className="icon">
-						<AiFillMail />
-						<span>Jason.patino94@gmail.com</span>
+						<AiFillMail className="picture" />
+						<span className="email">Jason.patino94@gmail.com</span>
 					</div>
 					<div className="icon">
-						<AiFillPhone id="icon" />
-						<span>(609)433-7920</span>
+						<AiFillPhone className="picture" />
+						<span className="number">(609) 433-7920</span>
 					</div>
 				</div>
 				<div className="right">

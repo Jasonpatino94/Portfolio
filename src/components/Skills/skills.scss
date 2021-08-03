@@ -7,28 +7,25 @@
 
 	.left {
 		flex: 0.5;
+		height: 100%;
 
 		h1 {
 			display: flex;
 			flex-wrap: wrap;
 			flex-direction: column;
 			align-items: flex-end;
-			padding-right: 100px;
-			padding-bottom: 30px;
+			margin-top: 5rem;
+			padding-right: 6rem;
+			padding-bottom: 4rem;
 			font-size: 50px;
 		}
 
 		.languages {
-			height: 93.5%;
 			display: grid;
 			grid-template-columns: 10rem 10rem; //110px 110px;
 			grid-template-rows: 10rem 10rem;
-			place-items: center;
-			align-items: center;
-			align-content: center;
 			grid-gap: 15px 15px;
 			justify-content: end;
-			background-color: rgb(201, 170, 170);
 		}
 
 		img {
@@ -38,13 +35,18 @@
 
 	.right {
 		flex: 0.5;
+		align-content: flex-start;
+		height: 100%;
+		padding-left: 2rem;
 
 		h1 {
-			background-color: rgb(201, 170, 170);
 			display: flex;
-			flex-direction: rows;
-			justify-content: flex-start;
-			font-size: 34px;
+			align-content: flex-start;
+			padding-top: 5rem;
+			padding-left: 6rem;
+			padding-bottom: 4rem;
+
+			font-size: 50px;
 		}
 
 		.languages {
@@ -52,8 +54,6 @@
 			grid-template-columns: 10rem 10rem;
 			justify-content: start;
 			grid-gap: 15px;
-
-			background-color: rgb(175, 143, 143);
 		}
 
 		img {
