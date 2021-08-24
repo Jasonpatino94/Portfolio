@@ -1,9 +1,15 @@
+@import "../../global.scss";
+
 .skills {
 	// background-color: brown;
 	display: flex;
 	border-bottom: 1px solid;
 	align-items: center;
 	justify-content: center;
+
+	@include mobile {
+		flex-direction: column;
+	}
 
 	.left {
 		flex: 0.5;
@@ -18,14 +24,31 @@
 			padding-right: 6rem;
 			padding-bottom: 4rem;
 			font-size: 50px;
+			@include mobile {
+				align-items: center;
+				margin-top: 0rem;
+				padding-bottom: 0rem;
+				padding-right: 0;
+			}
 		}
 
 		.languages {
 			display: grid;
-			grid-template-columns: 10rem 10rem; //110px 110px;
-			grid-template-rows: 10rem 10rem;
-			grid-gap: 15px 15px;
+			grid-template-columns: 11rem 11rem; //110px 110px;
+			grid-template-rows: 11rem 11rem;
+			grid-gap: 1rem 1rem;
 			justify-content: end;
+
+			h2 {
+				margin: 0.5rem;
+				padding: 0;
+			}
+
+			@include mobile {
+				grid-template-columns: 8rem 8rem 8rem;
+				grid-template-rows: 8rem 8rem;
+				grid-gap: 25px 50px;
+			}
 		}
 
 		img {
@@ -39,6 +62,10 @@
 		height: 100%;
 		padding-left: 2rem;
 
+		@include mobile {
+			padding-left: 0;
+		}
+
 		h1 {
 			display: flex;
 			align-content: flex-start;
@@ -47,13 +74,27 @@
 			padding-bottom: 4rem;
 
 			font-size: 50px;
+			@include mobile {
+				margin: 0;
+				padding-top: 0;
+				padding-left: 0;
+				padding-bottom: 0;
+				flex-direction: column;
+				align-items: center;
+			}
 		}
 
 		.languages {
 			display: grid;
-			grid-template-columns: 10rem 10rem;
+			grid-template-columns: 12rem 12rem;
 			justify-content: start;
-			grid-gap: 15px;
+			grid-gap: 1rem 1rem;
+
+			@include mobile {
+				flex-basis: auto;
+				justify-content: center;
+				align-items: center;
+			}
 		}
 
 		img {
@@ -64,6 +105,53 @@
 			width: 70%;
 			position: relative;
 			bottom: 20px;
+		}
+	}
+
+	.middle {
+		height: 50%;
+		width: 1%;
+		// background-color: black;
+		// margin: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		@include mobile {
+			height: 5px;
+			flex-direction: row;
+			width: 100%;
+			margin-bottom: 1rem;
+		}
+
+		.line1 {
+			height: 10%;
+			width: 2px;
+			background-color: black;
+			// margin: 0 auto;
+			@include mobile {
+				height: 5%;
+				width: 10%;
+			}
+		}
+
+		.line2 {
+			height: 10%;
+			width: 2px;
+			background-color: black;
+			@include mobile {
+				height: 5%;
+				width: 10%;
+			}
+		}
+		.line3 {
+			height: 10%;
+			width: 2px;
+			background-color: black;
+			@include mobile {
+				height: 5%;
+				width: 10%;
+			}
 		}
 	}
 }

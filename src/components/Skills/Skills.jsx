@@ -18,6 +18,11 @@ const Skills = () => {
 					))}
 				</div>
 			</div>
+			<div className="middle">
+				<div className="line1"></div>
+				<div className="line2"></div>
+				<div className="line3"></div>
+			</div>
 			<div className="right">
 				<h1>Backend</h1>
 				<div className="languages">

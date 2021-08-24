@@ -1,10 +1,20 @@
+@import "../../global.scss";
+
 .projects {
 	background-color: white;
 	display: flex;
 	border-bottom: 1px solid;
 
+	@include mobile {
+		flex-direction: column;
+	}
+
 	.left {
 		flex: 0.2;
+
+		@include mobile {
+			flex: 0.1;
+		}
 
 		a {
 			color: white;
@@ -41,6 +51,10 @@
 			justify-content: center;
 			overflow: y hidden;
 
+			@include mobile {
+				height: 100%;
+			}
+
 			// h1 {
 			// 	color: black;
 			// 	text-align: center;
@@ -59,15 +73,22 @@
 				margin: 0 auto;
 				// overflow-y: hidden;
 				// margin-top: %;
+
+				@include mobile {
+					width: 80%;
+					align-items: center;
+					justify-content: center;
+					padding-top: 20px;
+				}
 			}
 		}
-		.skill {
-			// background-color: white;
-			color: black;
-			// height: 10%;
-			text-align: center;
-			justify-content: center;
-			font-size: 35px;
-		}
+		// .skill {
+		// 	// background-color: white;
+		// 	color: black;
+		// 	// height: 10%;
+		// 	text-align: center;
+		// 	justify-content: center;
+		// 	font-size: 35px;
+		//
 	}
 }

@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .topbar {
 	background-color: rgb(200, 171, 171);
 	height: 65px;
@@ -15,6 +17,11 @@
 		.mainlogo {
 			font-size: 30px;
 			align-items: center;
+
+			@include mobile {
+				font-size: 3rem;
+			}
+
 			a {
 				color: black;
 				text-decoration: none;
@@ -25,6 +32,10 @@
 		.middle {
 			display: flex;
 			align-items: center;
+
+			@include mobile {
+				display: none;
+			}
 
 			.icon {
 				margin-right: 40px;

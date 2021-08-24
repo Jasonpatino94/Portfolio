@@ -1,7 +1,14 @@
+@import "../../global.scss";
+
 .aboutme {
 	// background-color: orange;
 	display: flex;
 	border-bottom: 2px solid;
+
+	@include mobile {
+		flex-direction: column;
+		align-items: center;
+	}
 
 	.picture {
 		flex: 0.5;
@@ -33,14 +40,27 @@
 			align-items: center;
 			display: flex;
 			flex-direction: column;
-			min-height: 80vh;
+			height: 100%;
+			overflow: y hidden;
+
+			@include mobile {
+				justify-content: flex-start;
+			}
 
 			h1 {
 				font-size: 50px;
+
+				@include mobile {
+					font-size: 20px;
+				}
 			}
 
 			h3 {
 				font-size: 30px;
+
+				@include mobile {
+					font-size: 16px;
+				}
 			}
 
 			.titlespin {
@@ -71,17 +91,6 @@
 			.summary {
 				margin-top: 50px;
 				width: 80%;
-			}
-		}
-
-		.nexticon {
-			justify-content: center;
-			align-items: center;
-			display: flex;
-			font-size: 50px;
-
-			h4 {
-				font-size: 35px;
 			}
 		}
 	}

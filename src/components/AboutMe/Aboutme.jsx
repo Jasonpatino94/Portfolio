@@ -2,7 +2,6 @@ import React from "react";
 import "./aboutme.scss";
 import {init} from "ityped";
 import {useEffect, useRef} from "react";
-import {AiFillCaretDown} from "react-icons/ai";
 
 const Aboutme = () => {
 	// const titleRef = useRef();
@@ -25,7 +24,7 @@ const Aboutme = () => {
 		<div className="aboutme" id="aboutme">
 			<div className="picture">
 				<div className="me">
-					<img src="Pictures/me.jpg" alt="Jason" />
+					<img src="Pictures/me2.jpg" alt="Jason" />
 				</div>
 			</div>
 			<div className="content">
@@ -44,13 +43,6 @@ const Aboutme = () => {
 						then I am most likely at the firehouse volunteering for the
 						comumunity as a firefighter.{" "}
 					</h3>
-				</div>
-
-				<div className="next">
-					<div className="nexticon">
-						<h4>Projects</h4>
-						<AiFillCaretDown />
-					</div>
 				</div>
 			</div>
 		</div>
