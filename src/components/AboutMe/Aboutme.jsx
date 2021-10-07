@@ -41,7 +41,7 @@ const Aboutme = () => {
 						am a recent graduate from Flatiron School. In my free time I love to
 						watch videos and read more about coding, and if I'm not doing that
 						then I am most likely at the firehouse volunteering for the
-						comumunity as a firefighter.{" "}
+						comumunity as a lieutenant.{" "}
 					</h3>
 				</div>
 			</div>
